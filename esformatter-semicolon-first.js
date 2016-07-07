@@ -28,7 +28,8 @@ var parseOptions = {
     classes: true,
     modules: true,
     jsx: true,
-    globalReturn: true
+    globalReturn: true,
+    experimentalObjectRestSpread: true
   }
 };
 
