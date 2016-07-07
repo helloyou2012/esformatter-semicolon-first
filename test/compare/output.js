@@ -4,13 +4,11 @@
 }())
 
 // should add if missing
-var x = 2
-;[1, 2, 3].map(function() {})
+var x = 2;[1, 2, 3].map(function() {})
 // comment
 ;[7, 8].forEach(doStuff)
 
-var y = 8
-;(function() {
+var y = 8;(function() {
   bar()
 }())
 
@@ -43,3 +41,10 @@ callFunctionLotsOfArgs(
 
 // test ES6 support
 import * as lib from 'lib'
+
+// allow experimental object rest/spread
+var obj = {}
+var z = {
+  ...obj,
+  test: 1
+}

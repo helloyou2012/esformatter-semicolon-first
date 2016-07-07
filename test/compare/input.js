@@ -43,3 +43,7 @@ callFunctionLotsOfArgs(
 
 // test ES6 support
 import * as lib from 'lib'
+
+// allow experimental object rest/spread
+var obj = {}
+var z = {...obj, test: 1}
