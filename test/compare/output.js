@@ -4,11 +4,13 @@
 }())
 
 // should add if missing
-var x = 2;[1, 2, 3].map(function() {})
+var x = 2
+;[1, 2, 3].map(function() {})
 // comment
 ;[7, 8].forEach(doStuff)
 
-var y = 8;(function() {
+var y = 8
+;(function() {
   bar()
 }())
 
