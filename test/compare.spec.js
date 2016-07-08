@@ -17,13 +17,7 @@ formatAndCompare('input.js', 'output.js');
 function formatAndCompare(inputFile, expectedFile) {
   var input = getFile(inputFile);
   var expected = getFile(expectedFile);
-  var output = esformatter.format(input, {
-    lineBreak : {
-      before : {
-        VariableDeclarationSemiColon: -1
-      }
-    }
-  });
+  var output = esformatter.format(input);
 
   if (output !== expected) {
     process.stderr.write(disparity.chars(output, expected, {
